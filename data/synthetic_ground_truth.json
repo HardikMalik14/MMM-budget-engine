@@ -1,0 +1,59 @@
+{
+  "seed": 42,
+  "n_weeks": 156,
+  "description": "Ground-truth data-generating process for synthetic_mmm_data.csv",
+  "organic": {
+    "base_revenue": 420000.0,
+    "trend_per_week": 450.0,
+    "seasonal_amplitude": 45000.0,
+    "holiday_lift": 60000.0,
+    "macro_coef_per_point": 4000.0,
+    "noise_sigma": 16110.089382451302
+  },
+  "channels": {
+    "paid_search_spend": {
+      "alpha": 0.2,
+      "ec50_ratio": 1.0,
+      "slope": 1.0,
+      "beta": 130000.0,
+      "ec50_abs": 39004.145983725844,
+      "total_spend": 6102183.755118201,
+      "true_contribution": 9929302.692597385,
+      "true_roi": 1.6271720241576129,
+      "true_contribution_pct_revenue": 0.09856994137570993
+    },
+    "paid_social_spend": {
+      "alpha": 0.4,
+      "ec50_ratio": 1.5,
+      "slope": 1.5,
+      "beta": 95000.0,
+      "ec50_abs": 48090.06787814695,
+      "total_spend": 5025243.965801347,
+      "true_contribution": 5072438.525467943,
+      "true_roi": 1.009391496211482,
+      "true_contribution_pct_revenue": 0.050354993051025254
+    },
+    "influencer_spend": {
+      "alpha": 0.5,
+      "ec50_ratio": 0.75,
+      "slope": 1.0,
+      "beta": 40000.0,
+      "ec50_abs": 9646.299094808057,
+      "total_spend": 2008080.7261498584,
+      "true_contribution": 2774566.888403112,
+      "true_roi": 1.3817008710216825,
+      "true_contribution_pct_revenue": 0.027543615498475584
+    },
+    "tv_spend": {
+      "alpha": 0.7,
+      "ec50_ratio": 1.0,
+      "slope": 2.0,
+      "beta": 150000.0,
+      "ec50_abs": 58808.15725914563,
+      "total_spend": 9296287.864505982,
+      "true_contribution": 10026709.054912599,
+      "true_roi": 1.0785712750134844,
+      "true_contribution_pct_revenue": 0.09953691153668506
+    }
+  }
+}
