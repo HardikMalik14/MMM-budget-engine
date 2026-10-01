@@ -276,4 +276,4 @@ Python · Streamlit · pandas · NumPy · SciPy (`signal.lfilter`, `optimize.min
 
 ## 📄 License
 
-MIT – free to use, modify and distribute.
+   Copyright (c) 2026 Hardik Malik
