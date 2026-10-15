@@ -201,7 +201,7 @@ python -m venv .venv
 source .venv/bin/activate          # Windows: .venv\Scripts\activate
 
 # 3. Install dependencies
-pip install -r requirements.txt
+pip install -r requirements-streamlit.txt
 
 # 4. (Optional) regenerate the synthetic data
 python data/generator.py
@@ -216,7 +216,7 @@ pytest
 ### Deploying
 
 * **Streamlit Community Cloud** – push to GitHub, create a new app pointing at `app.py`. No secrets are needed for the synthetic or public Kaggle data.
-* **Docker / any server** – `pip install -r requirements.txt && streamlit run app.py --server.port 8501 --server.address 0.0.0.0`.
+* **Docker / any server** – `pip install -r requirements-streamlit.txt && streamlit run app.py --server.port 8501 --server.address 0.0.0.0`.
 
 ---
 
@@ -277,3 +277,10 @@ Python · Streamlit · pandas · NumPy · SciPy (`signal.lfilter`, `optimize.min
 ## 📄 License
 
    Copyright (c) 2026 Hardik Malik
+
+
+## Deploy this repository on Vercel
+
+This repository now includes a browser dashboard and a FastAPI entrypoint (`index.py`) for Vercel. Import **this original repository**, select **FastAPI**, keep root directory `./`, and leave build/output/install overrides at their defaults. No environment variables are required. See [VERCEL_DEPLOYMENT.md](VERCEL_DEPLOYMENT.md) for the full steps and scope.
+
+The original Streamlit app is still in `app.py`. Install `requirements-streamlit.txt` to run it locally. `requirements.txt` contains the smaller Vercel runtime dependency set.
